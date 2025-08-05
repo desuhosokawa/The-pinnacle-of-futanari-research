@@ -31,6 +31,25 @@
       <p>© 2025 Futanari Institute of Transdisciplinary Studies</p>
     </footer>
   </div>
+<!-- 音楽ファイル -->
+<audio id="bgm" loop>
+  <source src="futanari_anthem_simple.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ボタン -->
+<button onclick="toggleMusic()">🎵 BGM再生 / 停止</button>
+
+<!-- 再生・停止スクリプト -->
+<script>
+  function toggleMusic() {
+    const audio = document.getElementById('bgm');
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
 
   <script src="script.js"></script>
 </body>
